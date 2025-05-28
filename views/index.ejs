@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= contenido.heroTitulo %></title>
   <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
@@ -30,8 +31,77 @@
     </div>
   </section>
 
-  <footer>
+  <!-- Botones de ciudades -->
+  <section class="container text-center mt-5">
+    <h2>Explora ciudades</h2>
+    <button class="btn btn-primary m-2" data-bs-toggle="collapse" data-bs-target="#collapseSincelejo">Sincelejo</button>
+    <button class="btn btn-success m-2" data-bs-toggle="collapse" data-bs-target="#collapseSampues">Sampués</button>
+    <button class="btn btn-warning m-2" data-bs-toggle="collapse" data-bs-target="#collapseColoso">Colosó</button>
+  </section>
+
+  <!-- Carrusel Sincelejo -->
+  <div class="collapse container mt-4" id="collapseSincelejo">
+    <div id="carouselSincelejo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% for(let i = 1; i <= 5; i++) { %>
+          <div class="carousel-item <%= i === 1 ? 'active' : '' %>">
+            <img src="/img/sincelejo<%= i %>.jpg" class="d-block w-100" alt="Sincelejo <%= i %>">
+          </div>
+        <% } %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSincelejo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSincelejo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Carrusel Sampués -->
+  <div class="collapse container mt-4" id="collapseSampues">
+    <div id="carouselSampues" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% for(let i = 1; i <= 5; i++) { %>
+          <div class="carousel-item <%= i === 1 ? 'active' : '' %>">
+            <img src="/img/sampues<%= i %>.jpg" class="d-block w-100" alt="Sampués <%= i %>">
+          </div>
+        <% } %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSampues" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSampues" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Carrusel Colosó -->
+  <div class="collapse container mt-4" id="collapseColoso">
+    <div id="carouselColoso" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% for(let i = 1; i <= 5; i++) { %>
+          <div class="carousel-item <%= i === 1 ? 'active' : '' %>">
+            <img src="/img/coloso<%= i %>.jpg" class="d-block w-100" alt="Colosó <%= i %>">
+          </div>
+        <% } %>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselColoso" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselColoso" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="mt-5">
     <p>© 2025 Sucre 360</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

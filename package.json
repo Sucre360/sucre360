@@ -9,10 +9,10 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
   },
   "description": "Sucre 360 es un proyecto web moderno y artístico que celebra la riqueza cultural y natural del departamento de Sucre, Colombia. Este sitio está diseñado para ser interactivo, editable, y visualmente poético.",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"

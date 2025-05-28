@@ -12,35 +12,33 @@
   </header>
 
   <section class="editor">
-    <% if (error) { %>
-      <p style="color: red;"><%= error %></p>
+    <% if (!loggedIn) { %>
+      <% if (error) { %>
+        <p style="color: red;"><%= error %></p>
+      <% } %>
+      <form action="/login" method="POST">
+        <label>Usuario: <input type="text" name="username" required></label><br>
+        <label>Contraseña: <input type="password" name="password" required></label><br>
+        <button type="submit">Ingresar</button>
+      </form>
+    <% } else { %>
+      <form action="/guardar" method="POST">
+        <h2>Editar Contenido</h2>
+        <label>Título Hero:
+          <input type="text" name="heroTitulo" value="<%= contenido.heroTitulo %>">
+        </label><br>
+        <label>Descripción Hero:<br>
+          <textarea name="heroDescripcion" rows="4"><%= contenido.heroDescripcion %></textarea>
+        </label><br>
+        <label>¿Quiénes Somos?:<br>
+          <textarea name="quienesSomos" rows="6"><%= contenido.quienesSomos %></textarea>
+        </label><br>
+
+        <h3>Lugares Destacados</h3>
+        <textarea name="lugares" style="width: 100%; height: 300px;"><%= JSON.stringify(contenido.lugares, null, 2) %></textarea><br>
+        <button type="submit">Guardar Cambios</button>
+      </form>
     <% } %>
-    <form action="/login" method="POST">
-      <label>Usuario: <input type="text" name="username" required></label>
-      <label>Contraseña: <input type="password" name="password" required></label>
-      <button type="submit">Ingresar</button>
-    </form>
-
-    <hr>
-
-    <form action="/guardar" method="POST">
-      <h2>Editar Contenido</h2>
-      <label>Título Hero:
-        <input type="text" name="heroTitulo" value="<%= contenido.heroTitulo %>">
-      </label>
-      <label>Descripción Hero:
-        <textarea name="heroDescripcion"><%= contenido.heroDescripcion %></textarea>
-      </label>
-      <label>¿Quiénes Somos?:
-        <textarea name="quienesSomos"><%= contenido.quienesSomos %></textarea>
-      </label>
-
-      <h3>Editar Lugares Destacados</h3>
-      <textarea name="lugares" style="width: 100%; height: 300px;">
-<%= JSON.stringify(contenido.lugares, null, 2) %>
-      </textarea>
-      <button type="submit">Guardar Cambios</button>
-    </form>
   </section>
 
   <footer>

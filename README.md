@@ -4,7 +4,7 @@ Sucre 360 es un proyecto web moderno y artístico que celebra la riqueza cultura
 
 ---
 
-## 🚀 Características
+## Características
 
 - Interfaz pública con diseño artístico y animaciones 360°
 - Editor protegido con usuario y contraseña
@@ -14,7 +14,7 @@ Sucre 360 es un proyecto web moderno y artístico que celebra la riqueza cultura
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 sucre360/
@@ -31,14 +31,14 @@ sucre360/
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 - Node.js (v14 o superior)
 - npm (Node Package Manager)
 
 ---
 
-## 🛠️ Instalación
+## Instalación
 
 ```bash
 # Clona el repositorio o copia los archivos en una carpeta
@@ -53,18 +53,18 @@ node server.js
 
 ---
 
-## 🌐 Acceso Local
+## Acceso Local
 
 - Página pública: [http://localhost:3000](http://localhost:3000)
 - Modo editor: [http://localhost:3000/editor](http://localhost:3000/editor)
 
-### 🔐 Credenciales del editor:
+### Credenciales del editor:
 - **Usuario:** Gworker
 - **Contraseña:** G0526
 
 ---
 
-## 🧑‍🎨 Contenido Editable
+## Contenido Editable
 
 - Título y descripción principal
 - Texto poético de "¿Quiénes somos?"
@@ -74,7 +74,7 @@ Los cambios se guardan en `data/contenido.json` y se reflejan automáticamente e
 
 ---
 
-## 🎨 Estética Visual
+## Estética Visual
 
 - Tipografía: Playfair Display, Pacifico, Roboto
 - Paleta de colores inspirada en la tierra, mar, vegetación y cultura de Sucre

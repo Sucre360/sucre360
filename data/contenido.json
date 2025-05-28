@@ -1,0 +1,22 @@
+{
+  "heroTitulo": "Bienvenido a Sucre 360",
+  "heroDescripcion": "Explora la riqueza cultural y natural del departamento de Sucre, Colombia.",
+  "quienesSomos": "Sucre 360° es una ventana inmersiva al alma de un territorio vibrante. Más que un mapa o una guía, somos una experiencia sensorial que invita a recorrer el corazón sabanero de Colombia, donde la arena canta, las palmas bailan y los tambores narran historias antiguas.",
+  "lugares": [
+    {
+      "nombre": "Sincelejo",
+      "descripcion": "Capital de Sucre, centro cultural y comercial, cuna del porro y punto de encuentro de saberes y tradiciones sabaneras.",
+      "img": "img/sincelejo (2).jpg"
+    },
+    {
+      "nombre": "Sampués",
+      "descripcion": "Capital artesanal de Sucre. Tierra de caña flecha, sombreros vueltiaos y música sabanera.",
+      "img": "img/sampues (1).jpg"
+    },
+    {
+      "nombre": "Colosó",
+      "descripcion": "Un paraíso con gran diversidad de fauna y flora, y fuentes fluviales que encantan a los turistas.",
+      "img": "img/Colosó (3).jpg"
+    }
+  ]
+}

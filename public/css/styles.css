@@ -1,0 +1,163 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f3ec;
+  color: #2e2e2e;
+}
+
+.hero {
+  background: linear-gradient(to right, #b96e42, #f9c784);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.quienes-somos {
+  background: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-left: 8px solid #b96e42;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.galeria {
+  padding: 2rem;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-galeria article {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 1rem;
+  transition: transform 0.5s;
+}
+
+.grid-galeria article:hover {
+  transform: rotateY(10deg);
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 1s;
+}
+
+.grid-galeria article:hover img {
+  transform: rotateY(360deg);
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.editor {
+  padding: 2rem;
+}
+
+.editor input[type="text"],
+.editor textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+.editor button {
+  background-color: #b96e42;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editor button:hover {
+  background-color: #a05c34;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paleta visual natural */
+:root {
+  --arena: #f8f3ec;
+  --tierra: #7b4f32;
+  --hojas: #4d7c0f;
+  --montanas: #355e3b;
+  --cielo: #ade3f7;
+  --arroyo: #c9effa;
+  --mar: #6dd6d6;
+}
+
+/* Marcos dibujados */
+.seccion-editable {
+  background: var(--arena);
+  border: 3px dashed var(--tierra);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+}
+
+.espacio-icono {
+  background-color: var(--arroyo);
+  border: 1px dashed var(--montanas);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-style: italic;
+}
+
+h1, h2, h3 {
+  color: var(--tierra);
+}
+
+img.icon-decorativo {
+  max-width: 80px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  animation: giro360 5s infinite linear;
+}
+
+@keyframes giro360 {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
